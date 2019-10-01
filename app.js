@@ -19,3 +19,13 @@ if (userTat === 'yes' || userTat === 'y') {
 } else {
     console.log('Plenty of blank space to get some!')
 } 
+
+var userTrav = prompt('Have you traveled much?')
+userTrav = userTrav.toLowerCase();
+
+if (userTrav === 'yes' || userTrav === 'y') {
+    console.log('I have traveled to 7 different countries!');
+} else {
+    console.log('There is still time! I have traveled quite a bit in my short time.')
+} 
+
