@@ -29,3 +29,12 @@ if (userTrav === 'yes' || userTrav === 'y') {
     console.log('There is still time! I have traveled quite a bit in my short time.')
 } 
 
+var userHT = prompt('Are you local to the area originally?')
+userHT = userHT.toLowerCase();
+
+if (userHT === 'yes' || userHT === 'y') {
+    console.log('Me too! I was born in Bremerton and that is where I live now!');
+} else {
+    console.log('Well welcome to my home state!')
+} 
+
