@@ -38,3 +38,14 @@ if (userHT === 'yes' || userHT === 'y') {
     console.log('Well welcome to my home state!')
 } 
 
+var userTech = prompt('Do you have much experience in the tech industry?')
+userTech = userTech.toLowerCase();
+
+if (userTech === 'yes' || userTech === 'y') {
+    console.log('One step ahead! The closest I got was building robots with erector sets.');
+} else {
+    console.log('Clean slate and no bad habits! I know very little about software, I like hardware.')
+} 
+
+
+
