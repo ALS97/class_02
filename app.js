@@ -62,4 +62,10 @@ if (userTech === 'yes' || userTech === 'y') {
 //console.log('It was nice meeting you, ' + userName );
 alert('It was nice meeting you, ' + userName );
 
+var userNumber = 'Pick a number between 1 and 50';
+
+
+  
+
+
 
