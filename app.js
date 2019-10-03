@@ -1,11 +1,11 @@
 'use strict';
 var score = 0;
-
-function userName(userName){
+var userName = '';
+function userName1(userName){
   //console.log('Welcome ' + userName);
   alert('Welcome ' + userName);
 }
-userName(prompt('What is your name, user?'));
+
 
 
 function userSnow(userSnow){
@@ -20,7 +20,7 @@ function userSnow(userSnow){
 
   }
 }
-userSnow(prompt('Do you like to snowboard?'));
+
 
 
 function userTat(userTat) {
@@ -34,7 +34,7 @@ function userTat(userTat) {
     alert('Plenty of blank space to get some!');
   }
 }
-userTat(prompt('Do you have any tattoos?'));
+
 
 
 function userTrav(userTrav) {
@@ -48,7 +48,7 @@ function userTrav(userTrav) {
     alert('There is still time! I have traveled quite a bit in my short time.');
   }
 }
-userTrav(prompt('Have you traveled much?'));
+
 
 function userHT(userHT){
   userHT = userHT.toLowerCase();
@@ -61,7 +61,7 @@ function userHT(userHT){
     alert('Well welcome to my home state!');
   }
 }
-userHT(prompt('Are you local to the area originally?'));
+
 
 
 function userTech(userTech){
@@ -76,9 +76,9 @@ function userTech(userTech){
     alert('Clean slate and no bad habits! I know very little about software, I like hardware.');
   }
 }
-userTech(prompt('Do you have much experience in the tech industry ?'));
+
 //console.log('It was nice meeting you, ' + userName );
-alert('It was nice meeting you, ' + userName);
+
 
 function userGuess(userGuess){
   var userNumber = 46;
@@ -95,7 +95,7 @@ function userGuess(userGuess){
     }
   }
 }
-userGuess(prompt('Pick a number between 1-50'));
+
 
 
 function userFood(userFood) {
@@ -121,11 +121,19 @@ function userFood(userFood) {
 
   }
 }
+
+userName1(prompt('What is your name, user?'));
+userSnow(prompt('Do you like to snowboard?'));
+userTat(prompt('Do you have any tattoos?'));
+userTrav(prompt('Have you traveled much?'));
+userHT(prompt('Are you local to the area originally?'));
+userGuess(prompt('Pick a number between 1-50'));
 userFood(prompt('what do you think my favorite food is?'));
 
 
 
-alert('You got ' + score + 'correct!');
+alert('It was nice meeting you, ' + userName + 'you got ' + score + 'correct!');
+
 
 
 
