@@ -1,4 +1,5 @@
 'use strict';
+var score = 0;
 
 var userName = prompt('What is your name, user?');
 //console.log('Welcome ' + userName);
@@ -10,6 +11,7 @@ userSnow = userSnow.toLowerCase();
 if (userSnow === 'yes' || userSnow === 'y') {
   //console.log('Awesome! It is my favorite hobby.');
   alert('Awesome! It is my favorite hobby.');
+  score++;
 } else {
   //console.log('You should try! It is my favorite hobby.');
   alert('You should try! It is my favorite hobby.');
@@ -22,6 +24,7 @@ userTat = userTat.toLowerCase();
 if (userTat === 'yes' || userTat === 'y') {
   //console.log('Nice! I have 6 myself.');
   alert('Nice! I have 6 myself.');
+  score++;
 } else {
   //console.log('Plenty of blank space to get some!');
   alert('Plenty of blank space to get some!');
@@ -33,6 +36,7 @@ userTrav = userTrav.toLowerCase();
 if (userTrav === 'yes' || userTrav === 'y') {
   //console.log('I have traveled to 7 different countries!');
   alert('I have traveled to 7 different countries!');
+  score++;
 } else {
   //console.log('There is still time! I have traveled quite a bit in my short time.');
   alert('There is still time! I have traveled quite a bit in my short time.');
@@ -44,6 +48,7 @@ userHT = userHT.toLowerCase();
 if (userHT === 'yes' || userHT === 'y') {
   //console.log('Me too! I was born in Bremerton and that is where I live now!');
   alert('Me too! I was born in Bremerton and that is where I live now!');
+  score++;
 } else {
   //console.log('Well welcome to my home state!');
   alert('Well welcome to my home state!');
@@ -55,17 +60,30 @@ userTech = userTech.toLowerCase();
 if (userTech === 'yes' || userTech === 'y') {
   //console.log('One step ahead! The closest I got was building robots with erector sets.');
   alert('One step ahead! The closest I got was building robots with erector sets.');
+  score++;
 } else {
   //console.log('Clean slate and no bad habits! I know very little about software, I like hardware.');
   alert('Clean slate and no bad habits! I know very little about software, I like hardware.');
 }
 //console.log('It was nice meeting you, ' + userName );
-alert('It was nice meeting you, ' + userName );
+alert('It was nice meeting you, ' + userName);
 
-var userNumber = 'Pick a number between 1 and 50';
+var userNumber = 46;
+for (var i = 0; i < 4; i++) {
+  var userGuess = prompt('Pick a number between 1-50');
+  userGuess = parseInt(userGuess);
+  if (userGuess === userNumber){
+    alert('Correct! The number is 46!');
+    score++;
+    break;
+  } if (userGuess>userNumber){
+    alert('Too High!!');
+  } if(userGuess<userNumber){
+    alert('Too Low!!');
+  }
+}
 
 
-  
 
 
 
