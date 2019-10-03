@@ -1,9 +1,11 @@
 'use strict';
 var score = 0;
 
-var userName = prompt('What is your name, user?');
-//console.log('Welcome ' + userName);
-alert('Welcome ' + userName);
+function userName(userName){
+  //console.log('Welcome ' + userName);
+  alert('Welcome ' + userName);
+}
+userName(prompt('What is your name, user?'));
 
 var userSnow = prompt('Have you ever gone snowboarding?');
 userSnow = userSnow.toLowerCase();
@@ -81,7 +83,11 @@ for (var i = 0; i < 4; i++) {
   } if(userGuess<userNumber){
     alert('Too Low!!');
   }
+
 }
+alert('You got ' + score + 'correct!');
+
+
 
 
 
