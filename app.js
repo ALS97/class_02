@@ -84,7 +84,32 @@ for (var i = 0; i < 4; i++) {
     alert('Too Low!!');
   }
 
+
 }
+var Food = ['sushi','pizza', 'burgers'];
+for(var t=0; t< 5; t++){
+  var userFood = prompt('what do you think my favorite food is?');
+  console.log('userFood' , userFood);
+  userFood = userFood.toLowerCase;
+  var isCorrect = false;
+  for (var x = 0; x<Food.length; x++){
+    if(userFood === Food[x]){
+      isCorrect = true;
+      alert('Correct! I enjoy Sushi, Pizza and Burgers!');
+      score++;
+      break;
+    }
+
+  }
+  if (isCorrect){
+    break;}
+
+  alert('Try again!');
+
+}
+
+
+
 alert('You got ' + score + 'correct!');
 
 
